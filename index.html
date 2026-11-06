@@ -18,6 +18,9 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Never lose a job to voicemail | Blueprinting">
 <meta name="twitter:description" content="Blueprinting texts your missed callers back in seconds and sends you a clean lead summary.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -44,7 +47,7 @@
     {"@type":"Question","name":"What about opt-outs?","acceptedAnswer":{"@type":"Answer","text":"Every first text includes Reply STOP. STOP and HELP are handled automatically."}},
     {"@type":"Question","name":"What does it cost?","acceptedAnswer":{"@type":"Answer","text":"Free for 14 days, then $150/month per shop. Cancel anytime."}},
     {"@type":"Question","name":"How fast is setup?","acceptedAnswer":{"@type":"Answer","text":"Usually within a day."}},
-    {"@type":"Question","name":"Is texting customers legal?","acceptedAnswer":{"@type":"Answer","text":"Yes, when they call you first and every text offers STOP. We follow carrier rules for registered business messaging."}},
+    {"@type":"Question","name":"Is texting customers legal?","acceptedAnswer":{"@type":"Answer","text":"Yes, when they call you first and every text offers STOP. We follow carrier rules for business texting."}},
     {"@type":"Question","name":"Will it work with my cell phone?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most carriers support conditional call forwarding, and we set it up with you."}}
   ]
 }
@@ -53,210 +56,160 @@
 <body>
 <header class="nav" id="nav">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Blueprinting home">
-      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="5" fill="#2F5BEA"/><rect x="7" y="7" width="10" height="10" rx="2" fill="none" stroke="#fff" stroke-width="2"/></svg>
-      Blueprinting
-    </a>
-    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+    <a class="brand" href="#top" aria-label="Blueprinting home"><span class="wm">Blueprinting</span><span class="loc">Kansas City</span></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">Menu</button>
     <ul class="nav-links" id="menu">
       <li><a href="#how">How it works</a></li>
-      <li><a href="#demo">Live demo</a></li>
+      <li><a href="#demo">Demo</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a class="btn btn-y btn-sm" href="mailto:hayden@blueprinting.ai?subject=Free%20pilot">Start free pilot</a></li>
+      <li><a class="btn btn-sm" href="mailto:hayden@blueprinting.ai?subject=Free%20pilot">Start free pilot</a></li>
     </ul>
   </div>
 </header>
 
 <main id="top">
 <section class="hero">
-  <img class="hero-bg" src="bp-hero2.jpg" alt="Modern farmhouse roofline against a clear pale-blue Kansas sky" fetchpriority="high">
-  <div class="wrap">
-    <div class="rv">
-      <span class="eyebrow">Missed-call text-back for home-service shops</span>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="label">Missed-call text-back for plumbing, HVAC and electrical shops</span>
       <h1>Never lose a job to voicemail.</h1>
-      <p class="lead">When you can't pick up, Blueprinting texts the caller back in seconds, gets the job details, and sends you a clean summary, so the customer books with you instead of the next shop on Google.</p>
+      <p class="lead">When you can&rsquo;t pick up, Blueprinting texts the caller back in seconds, gets the job details, and sends you a clean summary, so the customer books with you instead of the next shop on Google.</p>
       <div class="ctas">
-        <a class="btn btn-y" href="mailto:hayden@blueprinting.ai?subject=Free%2014-day%20pilot">Start a free 14-day pilot</a>
-        <a class="btn btn-ghost" href="#how">See how it works</a>
+        <a class="btn" href="mailto:hayden@blueprinting.ai?subject=Free%2014-day%20pilot">Start a free 14-day pilot <span class="ar">&rarr;</span></a>
+        <a class="btn btn-o" href="#how">How it works</a>
       </div>
-      <p class="fine">Keep your number · No contract · Set up in a day</p>
+      <div class="facts"><span>Keep your number</span><span>No contract</span><span>Set up in a day</span></div>
     </div>
-
-    <div class="glass rv d2" role="img" aria-label="Example conversation: a missed call from a customer with a leaking water heater gets an automatic text back, and the shop owner receives an urgent lead summary.">
-      <span class="cap">Example conversation</span>
-      <div class="cluster" aria-hidden="true">
-        <div class="ui notif">
-          <div class="ico red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/><path d="M17 3l4 4M21 3l-4 4"/></svg></div>
-          <div><b>Missed call</b><small>(816) 555-0142</small></div>
-          <span class="t">7:42 PM</span>
-        </div>
-        <div class="ui thread float">
-          <div class="thread-h"><div class="av">OP</div><div><b>Ostrander Plumbing</b><small>Auto text-back</small></div></div>
-          <div class="bub out">Sorry we missed your call at Ostrander Plumbing! What do you need help with, and what's the address? Reply STOP to opt out.</div>
-          <div class="bub in">Water heater's leaking in the basement. 1204 W 74th Terr, Overland Park.</div>
-          <div class="bub out">Got it. Is water still running?</div>
-          <div class="bub in">Yes</div>
-        </div>
-        <div class="ui summary">
-          <div class="sum-h"><b>New lead</b><span class="tag urgent">● Urgent</span></div>
-          <dl class="rows">
-            <dt>Customer</dt><dd>(816) 555-0142</dd>
-            <dt>Address</dt><dd>1204 W 74th Terr, Overland Park</dd>
-            <dt>Issue</dt><dd>Leaking water heater</dd>
-            <dt>Status</dt><dd class="g">Texted back in 8 sec</dd>
-          </dl>
-        </div>
+    <figure class="hero-fig">
+      <img src="bp-hero2.jpg" alt="Roofline of a Kansas City-area home against a clear sky" width="1264" height="848" fetchpriority="high">
+      <div class="log" role="img" aria-label="Example: a missed call at 7:42 PM is texted back 8 seconds later, the customer replies with a leaking water heater, and the shop gets an urgent lead.">
+        <div class="log-h"><span>Example call log</span><span>Ostrander Plumbing</span></div>
+        <ol aria-hidden="true">
+          <li><span class="t">7:42:03 PM</span><span class="k miss">MISSED</span><span class="v">(816) 555-0142, no answer</span></li>
+          <li><span class="t">7:42:11 PM</span><span class="k">TEXT SENT</span><span class="v">&ldquo;Sorry we missed your call&hellip; what do you need help with?&rdquo;</span></li>
+          <li><span class="t">7:43:40 PM</span><span class="k">REPLY</span><span class="v">&ldquo;Water heater&rsquo;s leaking in the basement. 1204 W 74th Terr.&rdquo;</span></li>
+          <li><span class="t">7:43:41 PM</span><span class="k ok">LEAD SENT</span><span class="v">Flagged urgent, summary on your phone</span></li>
+        </ol>
       </div>
-    </div>
+    </figure>
   </div>
 </section>
 
-<section class="trust" aria-label="Highlights">
-  <div class="wrap chips">
-    <div class="chip rv"><span class="ico blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>Text back in seconds, 24/7</div>
-    <div class="chip rv d1"><span class="ico blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span>Works with your existing number</div>
-    <div class="chip rv d2"><span class="ico blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span>Built for plumbing, HVAC &amp; electrical</div>
-  </div>
-</section>
-
-<section class="stats" aria-labelledby="stats-h">
+<section class="stats" aria-labelledby="stats-h" style="margin-top:96px">
   <div class="wrap">
-    <h2 id="stats-h" class="rv">The phone is where jobs are won, and lost.</h2>
+    <span class="label" style="color:#9A978F">Industry data</span>
+    <h2 id="stats-h">The phone is where jobs are won, and lost.</h2>
     <div class="stat-grid">
-      <div class="stat rv">
+      <div class="stat">
         <span class="num">27%</span>
         <p>of calls to home-services businesses go unanswered.</p>
-        <a class="src" href="https://www.invoca.com/blog/how-much-missed-sales-calls-cost-home-services-businesses" target="_blank" rel="noopener">Source: Invoca, May 23, 2024 ↗</a>
+        <a class="src" href="https://www.invoca.com/blog/how-much-missed-sales-calls-cost-home-services-businesses" target="_blank" rel="noopener">Invoca, May 23, 2024</a>
       </div>
-      <div class="stat rv d1">
+      <div class="stat">
         <span class="num">&lt;3%</span>
         <p>of callers sent to voicemail leave a message.</p>
-        <a class="src" href="https://www.invoca.com/blog/how-much-missed-sales-calls-cost-home-services-businesses" target="_blank" rel="noopener">Source: Invoca, May 23, 2024 ↗</a>
+        <a class="src" href="https://www.invoca.com/blog/how-much-missed-sales-calls-cost-home-services-businesses" target="_blank" rel="noopener">Invoca, May 23, 2024</a>
       </div>
-      <div class="stat rv d2">
+      <div class="stat">
         <span class="num">52%</span>
         <p>of callers to home-services businesses reach a person.</p>
-        <a class="src" href="https://www.invoca.com/reports/the-invoca-home-services-lead-conversion-benchmarks-report-2026" target="_blank" rel="noopener">Source: Invoca Home Services Lead Conversion Benchmarks 2026 ↗</a>
+        <a class="src" href="https://www.invoca.com/reports/the-invoca-home-services-lead-conversion-benchmarks-report-2026" target="_blank" rel="noopener">Invoca Home Services Benchmarks, 2026</a>
       </div>
     </div>
   </div>
 </section>
 
-<section id="problem">
+<section id="problem" style="border-top:0">
   <div class="wrap two">
-    <div class="rv">
-      <span class="eyebrow">The problem</span>
+    <div>
+      <span class="label"><b>01</b>The problem</span>
       <h2>Every missed call is a job someone else gets.</h2>
-      <p class="lead">You're under a sink, on a roof, or in an attic when the phone rings. You can't pick up, and you shouldn't have to.</p>
-      <p class="lead">Most callers won't leave a voicemail. They hang up and call the next shop on the list. Blueprinting makes sure they hear back from you first.</p>
+      <p class="lead">You&rsquo;re under a sink, on a roof, or in an attic when the phone rings. You can&rsquo;t pick up, and you shouldn&rsquo;t have to.</p>
+      <p class="lead">Most callers won&rsquo;t leave a voicemail. They hang up and call the next shop on the list. Blueprinting makes sure they hear back from you first.</p>
     </div>
-    <div class="pmedia rv d1">
-    <img class="photo" src="bp-plumber.jpg" alt="Plumber lying under a kitchen sink with a wrench while his phone rings unanswered on the floor beside him" loading="lazy" decoding="async" width="1264" height="848">
-    <div class="ui week" role="img" aria-label="Example weekly log: four missed calls, each texted back automatically">
-      <div class="week-h"><b>This week</b><small>4 missed calls</small></div>
-      <div class="call"><span class="ico red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 3l4 4M21 3l-4 4M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 2.7-1.8 3.4a16 16 0 0 0 6 6l3.4-1.8 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><b>Missed call</b><small>Mon 8:12 AM</small></div><span class="tag ok"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.5l2.2 2L9.5 3.5"/></svg>Texted back</span></div>
-      <div class="call"><span class="ico red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 3l4 4M21 3l-4 4M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 2.7-1.8 3.4a16 16 0 0 0 6 6l3.4-1.8 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><b>Missed call</b><small>Tue 12:40 PM</small></div><span class="tag ok"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.5l2.2 2L9.5 3.5"/></svg>Texted back</span></div>
-      <div class="call"><span class="ico red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 3l4 4M21 3l-4 4M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 2.7-1.8 3.4a16 16 0 0 0 6 6l3.4-1.8 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><b>Missed call</b><small>Wed 6:55 PM</small></div><span class="tag ok"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.5l2.2 2L9.5 3.5"/></svg>Texted back</span></div>
-      <div class="call"><span class="ico red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 3l4 4M21 3l-4 4M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 2.7-1.8 3.4a16 16 0 0 0 6 6l3.4-1.8 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><b>Missed call</b><small>Sat 10:03 AM</small></div><span class="tag ok"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.5l2.2 2L9.5 3.5"/></svg>Texted back</span></div>
-    </div>
+    <div>
+      <table class="table">
+        <caption>Example week</caption>
+        <thead><tr><th>When</th><th>Call</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td class="m">Mon 8:12 AM</td><td>Missed, on a job</td><td class="st">Texted back</td></tr>
+          <tr><td class="m">Tue 12:40 PM</td><td>Missed, at lunch</td><td class="st">Texted back</td></tr>
+          <tr><td class="m">Wed 6:55 PM</td><td>Missed, after hours</td><td class="st">Texted back</td></tr>
+          <tr><td class="m">Sat 10:03 AM</td><td>Missed, weekend</td><td class="st">Texted back</td></tr>
+        </tbody>
+      </table>
+      <figure class="photo"><img src="bp-plumber.jpg" alt="Plumber working under a kitchen sink while his phone rings on the floor" loading="lazy" decoding="async" width="1264" height="848"></figure>
     </div>
   </div>
 </section>
 
-<section id="how" class="bg2">
+<section id="how">
   <div class="wrap">
-    <div class="sec-head center rv">
-      <span class="eyebrow">How it works</span>
-      <h2>Set up in a day. Runs on its own.</h2>
+    <div class="sec-head">
+      <div><span class="label"><b>02</b>How it works</span><h2>Set up in a day. Runs on its own.</h2></div>
       <p class="lead">No new phone, no app for your techs to learn. It works with the number your customers already have.</p>
     </div>
     <div class="steps">
-      <article class="step rv">
-        <div class="vig" aria-hidden="true"><div class="ui tog"><b>Forward when busy/no answer<small>Your shop line</small></b><span class="switch"></span></div></div>
-        <span class="badge">1</span>
-        <h3>Forward unanswered calls</h3>
-        <p>Someone calls your shop line and nobody can get to the phone in time. The call forwards to your Blueprinting line.</p>
-      </article>
-      <article class="step rv d1">
-        <div class="vig" aria-hidden="true"><div class="ui" style="padding:12px"><div class="bub out">Sorry we missed your call! What do you need help with?</div></div></div>
-        <span class="badge">2</span>
-        <h3>Instant text-back</h3>
-        <p>Within seconds they get a friendly text from your business letting them know you got their call.</p>
-      </article>
-      <article class="step rv d2">
-        <div class="vig" aria-hidden="true"><div class="ui fields"><div class="field"><span>Issue</span><b>No heat</b></div><div class="field"><span>Address</span><b>Olathe</b></div><div class="field"><span>Urgency</span><b style="color:var(--red)">High</b></div></div></div>
-        <span class="badge">3</span>
-        <h3>Job details collected</h3>
-        <p>The customer describes what they need by text, on their own time, instead of moving on to a competitor.</p>
-      </article>
-      <article class="step rv d3">
-        <div class="vig" aria-hidden="true"><div class="ui notif"><div class="ico green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div><div><b>New lead summary</b><small>Tap to reply or call back</small></div></div></div>
-        <span class="badge">4</span>
-        <h3>You get the summary</h3>
-        <p>You get the conversation on your phone and can reply, call back, or schedule when you're free.</p>
-      </article>
+      <article class="step"><span class="n">Step 1</span><h3>Forward unanswered calls</h3><p>Someone calls your shop line and nobody can get to the phone in time. The call forwards to your Blueprinting line.</p></article>
+      <article class="step"><span class="n">Step 2</span><h3>Instant text-back</h3><p>Within seconds they get a friendly text from your business letting them know you got their call.</p></article>
+      <article class="step"><span class="n">Step 3</span><h3>Job details collected</h3><p>The customer describes what they need by text, on their own time, instead of moving on to a competitor.</p></article>
+      <article class="step"><span class="n">Step 4</span><h3>You get the summary</h3><p>You get the conversation on your phone and can reply, call back, or schedule when you&rsquo;re free.</p></article>
     </div>
   </div>
 </section>
 
 <section id="demo">
   <div class="wrap">
-    <div class="sec-head center rv">
-      <span class="eyebrow">Live demo</span>
-      <h2>See exactly what your customer gets.</h2>
-      <p class="lead">Put in your shop's name, pick your trade, and watch a missed call turn into a booked-ready lead.</p>
+    <div class="sec-head">
+      <div><span class="label"><b>03</b>Demo</span><h2>See exactly what your customer gets.</h2></div>
+      <p class="lead">Enter your shop&rsquo;s name, pick your trade, and run a missed call through it.</p>
     </div>
-    <form class="demo-ctl rv" id="demoForm" onsubmit="return false">
+    <form class="demo-ctl" id="demoForm" onsubmit="return false">
       <div class="fld"><label for="dShop">Shop name</label><input type="text" id="dShop" value="Ostrander Plumbing" maxlength="40" autocomplete="organization"></div>
       <div class="fld"><label for="dTrade">Trade</label><select id="dTrade"><option value="plumbing">Plumbing</option><option value="hvac">HVAC</option><option value="electrical">Electrical</option></select></div>
-      <button type="button" class="btn btn-y" id="dRun">Simulate a missed call</button>
+      <button type="button" class="btn" id="dRun">Simulate a missed call</button>
     </form>
-    <div class="demo-stage rv d1">
-      <div class="phone" role="group" aria-label="Simulated customer phone">
-        <div class="screen">
-          <div class="island" aria-hidden="true"></div>
-          <div class="sbar" aria-hidden="true"><span>7:42</span><i>●●● ▮</i></div>
-          <div class="ph-h"><div class="av" id="dAv" aria-hidden="true">OP</div><b id="dName">Ostrander Plumbing</b></div>
-          <div class="ph-body" id="dBody" aria-live="polite">
-            <p class="idle" id="dIdle">Press “Simulate a missed call” to see the text your customer receives.</p>
-          </div>
+    <div class="demo-stage">
+      <div class="pane" role="group" aria-label="Customer's text thread">
+        <div class="pane-h"><span>Customer&rsquo;s phone</span><b id="dName">Ostrander Plumbing</b></div>
+        <div class="thread" id="dBody" aria-live="polite">
+          <p class="idle" id="dIdle">Press &ldquo;Simulate a missed call&rdquo; to see the text your customer receives.</p>
         </div>
       </div>
-      <div class="ui lead-card wait" id="dCard" aria-live="polite">
-        <div class="sum-h"><b>New lead · Urgent</b><span class="tag urgent">● Urgent</span></div>
+      <div class="pane wait" id="dCard" aria-live="polite">
+        <div class="pane-h"><span>What lands on your phone</span><span class="flag">Urgent</span></div>
         <dl class="rows">
           <dt>Customer</dt><dd>(816) 555-0142</dd>
-          <dt>Address</dt><dd id="cAddr">Waiting for reply…</dd>
-          <dt>Issue</dt><dd id="cIssue">Waiting for reply…</dd>
+          <dt>Address</dt><dd id="cAddr">Waiting for reply&hellip;</dd>
+          <dt>Issue</dt><dd id="cIssue">Waiting for reply&hellip;</dd>
           <dt>Status</dt><dd class="g" id="cStat">Not started</dd>
         </dl>
-        <p class="hint">This is the summary that lands on your phone. Tap to call back or reply.</p>
+        <p class="hint">Reply by text or call back from the summary.</p>
       </div>
     </div>
-    <p class="demo-cap">Simulation of the real flow. Text-back runs on your shop's own forwarding line.</p>
+    <p class="demo-cap">Simulation of the real flow. Text-back runs on your shop&rsquo;s own forwarding line.</p>
   </div>
 </section>
 
-<section id="roi" class="bg2">
+<section id="roi">
   <div class="wrap">
-    <div class="sec-head center rv">
-      <span class="eyebrow">Quick math</span>
-      <h2>What are missed calls costing you?</h2>
-      <p class="lead">Move the sliders to match your shop.</p>
+    <div class="sec-head">
+      <div><span class="label"><b>04</b>The math</span><h2>What are missed calls costing you?</h2></div>
+      <p class="lead">Set the three numbers for your shop.</p>
     </div>
-    <div class="roi rv">
+    <div class="roi">
       <div class="roi-in">
         <div class="rng"><div class="rng-top"><label for="rCalls">Missed calls per week</label><output for="rCalls" id="oCalls">5</output></div><input type="range" id="rCalls" min="1" max="40" step="1" value="5"></div>
         <div class="rng"><div class="rng-top"><label for="rVal">Average job value</label><output for="rVal" id="oVal">$450</output></div><input type="range" id="rVal" min="100" max="5000" step="25" value="450"></div>
         <div class="rng"><div class="rng-top"><label for="rShare">Share that would have booked</label><output for="rShare" id="oShare">40%</output></div><input type="range" id="rShare" min="5" max="100" step="5" value="40"></div>
       </div>
       <div class="roi-out" aria-live="polite">
-        <span class="lbl">Est. revenue walking away each month:</span>
+        <span class="lbl">Est. revenue walking away each month</span>
         <span class="big" id="rOut">$3,897</span>
         <p class="cost">Blueprinting costs $150/month.</p>
-        <p class="cmp" id="rCmp">That's about 26× the monthly cost.</p>
+        <p class="cmp" id="rCmp">That&rsquo;s about 26&times; the monthly cost.</p>
         <p class="note">Your numbers, your estimate. Not a guarantee.</p>
       </div>
     </div>
@@ -265,123 +218,111 @@
 
 <section id="features">
   <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">Features</span>
-      <h2>Everything a busy shop needs. Nothing it doesn't.</h2>
+    <div class="sec-head solo">
+      <span class="label"><b>05</b>What&rsquo;s included</span>
+      <h2>Everything a busy shop needs. Nothing it doesn&rsquo;t.</h2>
     </div>
     <div class="feats">
-      <div class="feat rv"><span class="ico red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0zM12 9v4M12 17h.01"/></svg></span><h3>Emergency flagging</h3><p>Leaks, no heat and outages get marked urgent so you know what to call back first.</p></div>
-      <div class="feat rv d1"><span class="ico blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></span><h3>After-hours coverage</h3><p>Nights, weekends and job-site hours: every missed caller hears back in seconds.</p></div>
-      <div class="feat rv d2"><span class="ico blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><h3>Your shop's name and tone</h3><p>Texts go out under your business name, in wording we set up with you.</p></div>
-      <div class="feat rv"><span class="ico green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>STOP/HELP compliance built in</h3><p>Every first text includes Reply STOP, and opt-outs are handled automatically.</p></div>
-      <div class="feat rv d1"><span class="ico blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8v13H3V8M1 3h22v5H1zM10 12h4"/></svg></span><h3>Every conversation saved</h3><p>Look back at any lead's full text thread whenever you need it.</p></div>
-      <div class="feat rv d2"><span class="ico blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span><h3>Works with your current number</h3><p>Customers keep calling the same number they always have. No new phone needed.</p></div>
+      <div class="feat"><span class="n">5.1</span><h3>Emergency flagging</h3><p>Leaks, no heat and outages get marked urgent so you know what to call back first.</p></div>
+      <div class="feat"><span class="n">5.2</span><h3>After-hours coverage</h3><p>Nights, weekends and job-site hours: every missed caller hears back in seconds.</p></div>
+      <div class="feat"><span class="n">5.3</span><h3>Your shop&rsquo;s name and tone</h3><p>Texts go out under your business name, in wording we set up with you.</p></div>
+      <div class="feat"><span class="n">5.4</span><h3>STOP and HELP built in</h3><p>Every first text includes Reply STOP, and opt-outs are handled automatically.</p></div>
+      <div class="feat"><span class="n">5.5</span><h3>Every conversation saved</h3><p>Look back at any lead&rsquo;s full text thread whenever you need it.</p></div>
+      <div class="feat"><span class="n">5.6</span><h3>Works with your current number</h3><p>Customers keep calling the same number they always have. No new phone needed.</p></div>
     </div>
   </div>
 </section>
 
-<section id="pricing" class="bg2">
+<section id="pricing">
   <div class="wrap">
-    <div class="sec-head center rv">
-      <span class="eyebrow">Pricing</span>
-      <h2>One simple price per shop.</h2>
-      <p class="lead">Try it free for 14 days. If it's bringing in jobs, keep it going for a flat monthly rate, with no per-text fees.</p>
+    <div class="sec-head">
+      <div><span class="label"><b>06</b>Pricing</span><h2>One flat price per shop.</h2></div>
+      <p class="lead">Try it free for 14 days. If it&rsquo;s bringing in jobs, keep it going for a flat monthly rate, with no per-text fees.</p>
     </div>
-    <p class="pilot-badge rv"><span class="pulse" aria-hidden="true"></span>Pilot spots open for Kansas City shops</p>
-    <div class="plan rv">
-      <div class="plan-top"><h3>Pilot</h3><span class="pill-free">Free for 14 days</span></div>
-      <div class="amt">$150<small> / month per shop</small></div>
-      <p class="sub">After your free 14-day pilot. One flat rate.</p>
-      <ul class="checks">
-        <li>Unlimited missed-call text-backs</li>
-        <li>Lead summaries by text</li>
-        <li>Setup done for you</li>
-        <li>Keep your number</li>
-        <li>Cancel anytime, no contract</li>
-      </ul>
-      <a class="btn btn-y" href="mailto:hayden@blueprinting.ai?subject=Free%20pilot">Start free pilot</a>
-      <p class="local">Local to Kansas City. You'll talk to Hayden, not a call center.</p>
+    <div class="plan">
+      <div class="plan-l">
+        <p class="pilot-note">Pilot spots open for Kansas City shops</p>
+        <div class="amt">$150<small>/ month per shop</small></div>
+        <p class="sub">After your free 14-day pilot. One flat rate.</p>
+        <a class="btn" href="mailto:hayden@blueprinting.ai?subject=Free%20pilot">Start free pilot <span class="ar">&rarr;</span></a>
+        <p class="local">Local to Kansas City. You&rsquo;ll talk to Hayden, not a call center.</p>
+      </div>
+      <div class="plan-r">
+        <ul class="checks">
+          <li>Unlimited missed-call text-backs</li>
+          <li>Lead summaries by text</li>
+          <li>Setup done for you</li>
+          <li>Keep your number</li>
+          <li>Cancel anytime, no contract</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="who">
-  <div class="wrap center">
-    <div class="sec-head center rv">
-      <span class="eyebrow">Who we work with</span>
-      <h2>Owner-run trade shops in the KC metro.</h2>
-      <p class="lead">We work with owner-run plumbing, HVAC and electrical shops across the Kansas City metro, where one missed call can be a lost job.</p>
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="label"><b>07</b>Who it&rsquo;s for</span><h2>Owner-run trade shops in the KC metro.</h2></div>
+      <p class="lead">Plumbing, HVAC and electrical shops across the Kansas City metro, where one missed call can be a lost job.</p>
     </div>
-    <div class="tiles">
-      <article class="tile rv">
-        <div class="ph-ico" role="img" aria-label="Plumbing icon: a pipe wrench and water drop on a navy tile"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 22h22a8 8 0 0 1 8 8v4"/><path d="M10 14v16M4 22h6"/><path d="M40 34h-6v6h12v-6z"/><path d="M40 46c0 0-5 6-5 9a5 5 0 0 0 10 0c0-3-5-9-5-9z"/></svg></div>
-        <div class="txt"><h3>Plumbing</h3><p>Leaks, clogs, and water heaters: customers want someone today and will keep dialing until they find them.</p></div>
-      </article>
-      <article class="tile rv d1">
-        <img src="bp-hvac.jpg" alt="HVAC technician servicing an outdoor condenser unit beside a suburban home" loading="lazy" decoding="async" width="1264" height="848">
-        <div class="txt"><h3>HVAC</h3><p>When the AC dies in July or the furnace quits in January, the first shop to respond usually gets the job.</p></div>
-      </article>
-      <article class="tile rv d2">
-        <img src="bp-electric.jpg" alt="Electrician working at an open breaker panel while a phone notification glows in his pocket" loading="lazy" decoding="async" width="1264" height="848">
-        <div class="txt"><h3>Electrical</h3><p>Panels, outages, and service calls. Respond fast without stopping work to answer every ring.</p></div>
-      </article>
+    <div class="trades">
+      <article class="trade"><img src="bp-plumber.jpg" alt="Plumber under a kitchen sink" loading="lazy" decoding="async" width="1264" height="848" style="object-position:30% 50%"><h3>Plumbing</h3><p>Leaks, clogs, and water heaters: customers want someone today and will keep dialing until they find them.</p></article>
+      <article class="trade"><img src="bp-hvac.jpg" alt="HVAC technician servicing an outdoor condenser unit beside a suburban home" loading="lazy" decoding="async" width="1264" height="848"><h3>HVAC</h3><p>When the AC dies in July or the furnace quits in January, the first shop to respond usually gets the job.</p></article>
+      <article class="trade"><img src="bp-electric.jpg" alt="Electrician working at an open breaker panel" loading="lazy" decoding="async" width="1264" height="848"><h3>Electrical</h3><p>Panels, outages, and service calls. Respond fast without stopping work to answer every ring.</p></article>
     </div>
-    <div class="pills rv">
-      <span>Kansas City</span><span>Overland Park</span><span>Olathe</span><span>Lenexa</span><span>Shawnee</span><span>Lee's Summit</span><span>Independence</span><span>and nearby</span>
-    </div>
+    <p class="area"><b>Service area</b>Kansas City &middot; Overland Park &middot; Olathe &middot; Lenexa &middot; Shawnee &middot; Lee&rsquo;s Summit &middot; Independence &middot; and nearby</p>
   </div>
 </section>
 
-<section id="about" style="padding-top:0">
-  <div class="wrap">
-    <div class="founder rv">
-      <div class="hg" aria-hidden="true">HG</div>
-      <div>
-        <span class="eyebrow">About</span>
-        <h2 style="font-size:1.75rem">Local, and run by a real person.</h2>
-        <p class="q">Hayden Garvey, founder. Based in Shawnee, Kansas. I build simple tools that help local trade shops stop losing work to missed calls.</p>
-        <p>Blueprinting is built for small, owner-run trade businesses where the owner is often the one on the job and can't answer the phone. You'll work with Hayden directly on setup and support. You won't be routed to a call center.</p>
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <span class="label"><b>08</b>About</span>
+      <h2>Local, and run by a real person.</h2>
+      <p>Hayden Garvey, founder, based in Shawnee, Kansas. Blueprinting is built for small, owner-run trade businesses where the owner is often the one on the job and can&rsquo;t answer the phone.</p>
+      <p>You&rsquo;ll work with Hayden directly on setup and support. You won&rsquo;t be routed to a call center.</p>
+    </div>
+    <div>
+      <blockquote class="quote">
+        <p>&ldquo;You&rsquo;ll have my direct number. If it doesn&rsquo;t work for your shop, you cancel with one text, no contract, no fee.&rdquo;</p>
+        <cite>Hayden Garvey, Founder &middot; <a href="tel:+16283049759">(628) 304-9759</a></cite>
+      </blockquote>
+      <div class="comply">
+        <span class="label">How texting is handled</span>
+        <ul>
+          <li>Texts only go to people who called your shop first</li>
+          <li>STOP and HELP handled automatically</li>
+          <li>Your customers&rsquo; numbers are never sold or shared</li>
+        </ul>
+        <p class="links">Details: <a href="#privacy">Privacy Policy</a> &middot; <a href="#sms-terms">SMS Terms and Consent</a></p>
       </div>
     </div>
-    <div class="promise rv">
-      <span class="eyebrow">Founder's promise</span>
-      <blockquote><p>“You'll have my direct number. If it doesn't work for your shop, you cancel with one text, no contract, no fee.”</p></blockquote>
-      <div class="sig"><span class="script">Hayden Garvey</span><small>Hayden Garvey, Founder · <a href="tel:+16283049759">(628) 304-9759</a></small></div>
-    </div>
-    <h3 class="comply-h rv">Compliance built in</h3>
-    <div class="comply rv">
-      <div><span class="ico green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>STOP and HELP handled automatically</div>
-      <div><span class="ico blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span>Carrier-registered business messaging</div>
-      <div><span class="ico blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>Your customers' numbers are never sold or shared</div>
-    </div>
-    <p class="comply-links rv">Read the details: <a href="#privacy">Privacy Policy</a> · <a href="#sms-terms">SMS Terms and Consent</a></p>
   </div>
 </section>
 
-<section id="explained" style="padding-top:24px">
+<section id="explained">
   <div class="wrap">
-    <div class="explain rv">
-      <span class="eyebrow">The basics</span>
-      <h2>Missed-call text-back, explained.</h2>
-      <p>Missed-call text-back is simple: when a call to your shop goes unanswered, the caller automatically gets a text from your business within seconds. Instead of hitting voicemail and moving on, they can reply with what's wrong and where they are, and you get the details on your phone.</p>
-      <p>For plumbers, HVAC techs and electricians in Kansas City, that matters because most calls are urgent and most callers won't wait. A burst pipe in Overland Park or a dead furnace in Lee's Summit goes to whichever shop responds first. When you're on a ladder or under a house, a fast, friendly text keeps that customer talking to you, not the next listing on Google. It works with your existing number through call forwarding, so nothing changes for your customers except they hear back faster.</p>
+    <span class="label"><b>09</b>The basics</span>
+    <h2 style="margin-bottom:36px">Missed-call text-back, explained.</h2>
+    <div class="explain">
+      <p>Missed-call text-back is simple: when a call to your shop goes unanswered, the caller automatically gets a text from your business within seconds. Instead of hitting voicemail and moving on, they can reply with what&rsquo;s wrong and where they are, and you get the details on your phone.</p>
+      <p>For plumbers, HVAC techs and electricians in Kansas City, that matters because most calls are urgent and most callers won&rsquo;t wait. A burst pipe in Overland Park or a dead furnace in Lee&rsquo;s Summit goes to whichever shop responds first.</p>
+      <p>When you&rsquo;re on a ladder or under a house, a fast, friendly text keeps that customer talking to you, not the next listing on Google. It works with your existing number through call forwarding, so nothing changes for your customers except they hear back faster.</p>
     </div>
   </div>
 </section>
 
-<section id="faq" class="bg2">
-  <div class="wrap">
-    <div class="sec-head center rv">
-      <span class="eyebrow">FAQ</span>
-      <h2>Questions shop owners ask.</h2>
-    </div>
-    <div class="faq rv">
+<section id="faq">
+  <div class="wrap two">
+    <div><span class="label"><b>10</b>FAQ</span><h2>Questions shop owners ask.</h2></div>
+    <div class="faq">
       <details><summary>Do I need a new number?</summary><p>No. Unanswered calls forward to your Blueprinting line, and customers still call your number.</p></details>
-      <details><summary>What does the text say?</summary><p>Your shop's name and a short question. We set the wording with you.</p></details>
+      <details><summary>What does the text say?</summary><p>Your shop&rsquo;s name and a short question. We set the wording with you.</p></details>
       <details><summary>What about opt-outs?</summary><p>Every first text includes Reply STOP. STOP and HELP are handled automatically.</p></details>
       <details><summary>What does it cost?</summary><p>Free for 14 days, then $150/month per shop. Cancel anytime.</p></details>
       <details><summary>How fast is setup?</summary><p>Usually within a day.</p></details>
-      <details><summary>Is texting customers legal?</summary><p>Yes, when they call you first and every text offers STOP. We follow carrier rules for registered business messaging.</p></details>
+      <details><summary>Is texting customers legal?</summary><p>Yes, when they call you first and every text offers STOP. We follow carrier rules for business texting.</p></details>
       <details><summary>Will it work with my cell phone?</summary><p>Yes. Most carriers support conditional call forwarding, and we set it up with you.</p></details>
     </div>
   </div>
@@ -389,45 +330,37 @@
 
 <section class="final">
   <div class="wrap">
-    <div class="rv">
+    <div>
       <h2>Stop losing jobs to voicemail.</h2>
       <p>Free for 14 days. Keep your number. No contract.</p>
     </div>
-    <div class="acts rv d1">
-      <a class="btn btn-y" href="mailto:hayden@blueprinting.ai?subject=Free%2014-day%20pilot">Start a free 14-day pilot</a>
-      <a class="tel" href="tel:+16283049759"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>(628) 304-9759</a>
+    <div class="acts">
+      <a class="btn" href="mailto:hayden@blueprinting.ai?subject=Free%2014-day%20pilot">Start a free 14-day pilot <span class="ar">&rarr;</span></a>
+      <a class="btn btn-o" href="tel:+16283049759">(628) 304-9759</a>
     </div>
   </div>
 </section>
 
-<section id="contact">
+<section id="contact" style="border-top:0">
   <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">Contact</span>
-      <h2>Start your free pilot.</h2>
+    <div class="sec-head">
+      <div><span class="label"><b>11</b>Contact</span><h2>Start your free pilot.</h2></div>
       <p class="lead">Call, text, or email Hayden to get set up. You keep your existing number.</p>
     </div>
-    <div class="contact-grid">
-      <dl class="ccard rv">
-        <dt>Name</dt><dd>Hayden Garvey</dd>
-        <dt>Company</dt><dd>Blueprinting</dd>
-        <dt>Email</dt><dd><a href="mailto:hayden@blueprinting.ai">hayden@blueprinting.ai</a></dd>
-        <dt>Phone</dt><dd><a href="tel:+16283049759">(628) 304-9759</a></dd>
-      </dl>
-      <dl class="ccard rv d1">
-        <dt>Address</dt><dd>6340 Millridge St<br>Shawnee, KS 66218</dd>
-        <dt>Service area</dt><dd>Kansas City metro</dd>
-        <dt>Get started</dt><dd style="margin-top:10px"><a class="btn btn-y" style="text-decoration:none" href="mailto:hayden@blueprinting.ai?subject=Free%2014-day%20pilot">Email for a pilot</a></dd>
-      </dl>
-    </div>
+    <dl class="ccard">
+      <div><dt>Name</dt><dd>Hayden Garvey<br>Blueprinting</dd></div>
+      <div><dt>Email</dt><dd><a href="mailto:hayden@blueprinting.ai">hayden@blueprinting.ai</a></dd></div>
+      <div><dt>Phone</dt><dd><a href="tel:+16283049759">(628) 304-9759</a></dd></div>
+      <div><dt>Address</dt><dd>6340 Millridge St<br>Shawnee, KS 66218</dd></div>
+    </dl>
   </div>
 </section>
 
-<section id="sms-terms" class="bg2">
+<section id="sms-terms" style="background:var(--paper2)">
   <div class="wrap legal-wrap">
     <aside class="legal-side"><b>Legal</b><a href="#sms-terms">SMS Terms and Consent</a><a href="#privacy">Privacy Policy</a></aside>
-    <div class="legal">
-      <span class="eyebrow">Legal</span>
+    <div>
+      <div class="legal" id="sms-terms-body">
       <h2>SMS Terms and Consent</h2>
       <p>Blueprinting provides Missed Call Text Back on behalf of local trade businesses ("the Business"). When you call a participating Business and the call is missed, you may receive a text message from that Business's phone number in reply to your call.</p>
       <h3>Consent</h3>
@@ -442,14 +375,7 @@
       <p>Reply STOP at any time to stop receiving messages. You will get one confirmation text and no more messages after that. Reply HELP for help, or contact us at <a href="mailto:hayden@blueprinting.ai">hayden@blueprinting.ai</a> or (628) 304-9759.</p>
       <p>Carriers are not liable for delayed or undelivered messages.</p>
     </div>
-  </div>
-</section>
-
-<section id="privacy" class="bg2" style="padding-top:0">
-  <div class="wrap legal-wrap">
-    <div aria-hidden="true"></div>
-    <div class="legal" style="border-top:1px solid var(--line);padding-top:72px">
-      <span class="eyebrow">Legal</span>
+      <div class="legal" id="privacy">
       <h2>Privacy Policy</h2>
       <p>This policy explains how Blueprinting handles information in connection with Missed Call Text Back.</p>
       <h3>Information we collect</h3>
@@ -472,6 +398,7 @@
       <h3>Contact</h3>
       <p>Questions about this policy can go to Hayden Garvey, Blueprinting, 6340 Millridge St, Shawnee, KS 66218. Email <a href="mailto:hayden@blueprinting.ai">hayden@blueprinting.ai</a> or call (628) 304-9759.</p>
     </div>
+    </div>
   </div>
 </section>
 </main>
@@ -479,101 +406,17 @@
 <footer>
   <div class="wrap">
     <div class="foot">
-      <a class="brand" href="#top" aria-label="Blueprinting home"><svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="5" fill="#2F5BEA"/><rect x="7" y="7" width="10" height="10" rx="2" fill="none" stroke="#fff" stroke-width="2"/></svg>Blueprinting</a>
-      <nav aria-label="Footer"><a href="#how">How it works</a><a href="#demo">Live demo</a><a href="#pricing">Pricing</a><a href="#sms-terms">SMS Terms</a><a href="#privacy">Privacy</a><a href="#contact">Contact</a></nav>
+      <a class="brand" href="#top" aria-label="Blueprinting home"><span class="wm">Blueprinting</span><span class="loc">Kansas City</span></a>
+      <nav aria-label="Footer"><a href="#how">How it works</a><a href="#demo">Demo</a><a href="#pricing">Pricing</a><a href="#sms-terms">SMS Terms</a><a href="#privacy">Privacy</a><a href="#contact">Contact</a></nav>
     </div>
-    <p class="copy">© 2026 Blueprinting · Shawnee, Kansas · <a href="mailto:hayden@blueprinting.ai">hayden@blueprinting.ai</a> · <a href="tel:+16283049759">(628) 304-9759</a></p>
+    <p class="copy">&copy; 2026 Blueprinting &middot; 6340 Millridge St, Shawnee, KS 66218 &middot; <a href="mailto:hayden@blueprinting.ai">hayden@blueprinting.ai</a> &middot; <a href="tel:+16283049759">(628) 304-9759</a></p>
   </div>
 </footer>
 
 <div class="bbar">
-  <a class="btn btn-y" href="#contact">Contact us now</a>
-  <a class="btn call-ic" href="tel:+16283049759" aria-label="Call (628) 304-9759"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+  <a class="p" href="mailto:hayden@blueprinting.ai?subject=Free%2014-day%20pilot">Start free pilot</a>
+  <a class="c" href="tel:+16283049759">Call</a>
 </div>
-
-<script>
-(function(){
-  var nav=document.getElementById('nav'),b=document.getElementById('burger'),m=document.getElementById('menu');
-  b.addEventListener('click',function(){var o=nav.classList.toggle('open');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Close menu':'Open menu');});
-  m.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');b.setAttribute('aria-expanded','false');}});
-  function sc(){nav.classList.toggle('scrolled',window.scrollY>8);}
-  window.addEventListener('scroll',sc,{passive:true});sc();
-  var els=document.querySelectorAll('.rv');
-  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(function(e){e.classList.add('in')});return;}
-  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
-  els.forEach(function(e){io.observe(e)});
-})();
-
-/* live demo */
-(function(){
-  var RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var T={
-    plumbing:{def:'Ostrander Plumbing',reply:'Water heater is leaking in the basement. 1204 W 74th Terr, Overland Park.',q:'Got it. Is water still running? We can shut it off and come out today.',addr:'1204 W 74th Terr, Overland Park',issue:'Leaking water heater'},
-    hvac:{def:'Ostrander Heating & Air',reply:"Furnace won't kick on and it's 38 degrees. 8810 Rosehill Rd, Lenexa.",q:'Got it. Is the thermostat screen on, and is anyone in the home at risk from the cold?',addr:'8810 Rosehill Rd, Lenexa',issue:'No heat, furnace down'},
-    electrical:{def:'Ostrander Electric',reply:'Half the outlets in the kitchen died. 6620 Pflumm Rd, Shawnee.',q:'Got it. Any burning smell or warm outlets? Have you checked the breaker panel?',addr:'6620 Pflumm Rd, Shawnee',issue:'Kitchen outlets dead'}
-  };
-  var shop=document.getElementById('dShop'),trade=document.getElementById('dTrade'),run=document.getElementById('dRun'),
-      body=document.getElementById('dBody'),nameEl=document.getElementById('dName'),av=document.getElementById('dAv'),
-      card=document.getElementById('dCard'),cA=document.getElementById('cAddr'),cI=document.getElementById('cIssue'),cS=document.getElementById('cStat');
-  if(!run)return;
-  var timers=[],played=false;
-  function nm(){var v=shop.value.trim();return v||'Your Shop';}
-  function initials(s){var p=s.split(/\s+/).filter(function(w){return /[A-Za-z0-9]/.test(w)});return ((p[0]||'Y')[0]+((p[1]||'')[0]||'')).toUpperCase();}
-  function head(){nameEl.textContent=nm();av.textContent=initials(nm());}
-  shop.addEventListener('input',head);
-  trade.addEventListener('change',function(){
-    var v=shop.value.trim();
-    for(var k in T){if(v===T[k].def){shop.value=T[trade.value].def;head();break;}}
-    if(played)reset();
-  });
-  function clear(){timers.forEach(clearTimeout);timers=[];}
-  function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;}
-  function add(node){if(!RM)node.classList.add('pop');body.appendChild(node);body.scrollTop=body.scrollHeight;return node;}
-  function typing(dir){var t=el('div','bub typing '+dir);t.setAttribute('aria-label','typing');t.innerHTML='<span></span><span></span><span></span>';return add(t);}
-  function reset(){
-    clear();played=false;body.innerHTML='';
-    var p=el('p','idle','Press “Simulate a missed call” to see the text your customer receives.');body.appendChild(p);
-    card.classList.add('wait');cA.textContent='Waiting for reply…';cI.textContent='Waiting for reply…';cS.textContent='Not started';
-    run.textContent='Simulate a missed call';
-  }
-  function play(){
-    clear();body.innerHTML='';played=true;head();
-    card.classList.add('wait');cA.textContent='Waiting for reply…';cI.textContent='Waiting for reply…';cS.textContent='Texting back…';
-    run.textContent='Reset and replay';
-    var d=T[trade.value],s=nm(),cur=null;
-    var steps=[
-      [0,function(){var m=el('div','mc');m.innerHTML='<span class="ico red" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 3l4 4M21 3l-4 4M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.7 2.7-1.8 3.4a16 16 0 0 0 6 6l3.4-1.8 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>';var t=el('div');t.appendChild(el('b',null,'Missed call'));t.appendChild(el('small',null,'Called '+s+' · 7:42 PM'));m.appendChild(t);add(m);add(el('p','stamp','Today 7:42 PM'));}],
-      [1000,function(){cur=typing('out');}],
-      [2000,function(){if(cur)cur.remove();add(el('div','bub out','Sorry we missed your call at '+s+'! What do you need help with, and what\'s the address? Reply STOP to opt out.'));cS.textContent='Texted back in 8 sec';}],
-      [3000,function(){cur=typing('in');}],
-      [4600,function(){if(cur)cur.remove();add(el('div','bub in',d.reply));cA.textContent=d.addr;cI.textContent=d.issue;}],
-      [5400,function(){cur=typing('out');}],
-      [6300,function(){if(cur)cur.remove();add(el('div','bub out',d.q));}],
-      [6900,function(){card.classList.remove('wait');}]
-    ];
-    steps.forEach(function(st){
-      if(RM){if(st[0]!==1000&&st[0]!==3000&&st[0]!==5400)st[1]();}
-      else timers.push(setTimeout(st[1],st[0]));
-    });
-  }
-  run.addEventListener('click',play);
-})();
-
-/* roi */
-(function(){
-  var c=document.getElementById('rCalls'),v=document.getElementById('rVal'),s=document.getElementById('rShare');
-  if(!c)return;
-  var oc=document.getElementById('oCalls'),ov=document.getElementById('oVal'),os=document.getElementById('oShare'),out=document.getElementById('rOut'),cmp=document.getElementById('rCmp');
-  function f(n){return '$'+Math.round(n).toLocaleString('en-US');}
-  function calc(){
-    var x=c.value*4.33*v.value*(s.value/100);
-    oc.textContent=c.value;ov.textContent=f(v.value);os.textContent=s.value+'%';
-    out.textContent=f(x);
-    var r=x/150;
-    cmp.textContent=r>=1.5?"That's about "+(r<10?r.toFixed(1):Math.round(r))+"× the monthly cost.":r>=1?"That's roughly what it costs. One extra booked job covers it.":"At these numbers, it's less than the monthly cost.";
-  }
-  [c,v,s].forEach(function(i){i.addEventListener('input',calc)});calc();
-})();
-</script>
+<script src="app.js"></script>
 </body>
 </html>
