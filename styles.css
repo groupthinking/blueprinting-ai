@@ -177,6 +177,7 @@ h3{font-size:20px;line-height:1.3;letter-spacing:-.01em}
 .photo-visual{overflow:hidden;height:440px}
 .photo-visual img{width:100%;height:100%;object-fit:cover;object-position:60% 50%}
 .ui-notify{left:24px;bottom:24px;width:300px;padding:16px}
+.photo-visual .ui-notify{top:24px;bottom:auto}
 .notify-from{font-weight:600;font-size:14px;font-variant-numeric:tabular-nums}
 .notify-msg{margin-top:4px;font-size:13px;color:var(--text);line-height:1.5}
 .notify-actions{display:flex;gap:8px;margin-top:12px}
@@ -357,6 +358,7 @@ input[type=range]{width:100%;accent-color:var(--accent);margin:0;height:20px}
   .photo-visual{height:auto;min-height:0;display:grid}
   .photo-visual img{height:280px}
   .ui-notify{position:relative;left:auto;bottom:auto;margin:-60px auto 20px;width:calc(100% - 40px);max-width:340px}
+  .photo-visual .ui-notify{top:auto}
   .steps{grid-template-columns:1fr 1fr}
   .ind-grid{grid-template-columns:1fr;gap:20px}
   .onboard{grid-template-columns:1fr;gap:40px}
