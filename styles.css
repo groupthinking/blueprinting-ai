@@ -72,7 +72,8 @@ ul,ol{margin:0;padding:0;list-style:none}
 .nav-links>a:hover{color:var(--accent);text-decoration:none}
 .nav-mobile-cta{display:none}
 .nav-actions{margin-left:auto;display:flex;align-items:center;gap:20px}
-.nav-phone{color:var(--ink);font-size:15px;font-weight:500}
+.nav-phone{display:inline-flex;align-items:center;gap:8px;color:var(--ink);font-size:15px;font-weight:500}
+.icon-phone{flex:0 0 auto;color:var(--accent)}
 .burger{display:none;margin-left:auto;width:42px;height:42px;border:1px solid var(--line-2);border-radius:var(--radius);background:#fff;padding:0;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:4px}
 .burger span{display:block;width:18px;height:2px;background:var(--ink);border-radius:1px}
 
@@ -125,7 +126,7 @@ h3{font-size:20px;line-height:1.3;letter-spacing:-.01em}
 .bubble.in{align-self:flex-start;background:#EEF1F5;color:var(--ink);border-bottom-left-radius:4px}
 .sms-meta{font-size:11.5px;color:var(--accent-dark);font-weight:600;margin-top:2px}
 
-/* Studio, clinic and example cards */
+/* Studio, session and example cards */
 .ui-plan{width:300px}
 .ui-plan .ui-rows li{grid-template-columns:48px 1fr auto}
 .ui-plan .r-who{white-space:normal;line-height:1.35}
@@ -135,9 +136,9 @@ h3{font-size:20px;line-height:1.3;letter-spacing:-.01em}
 .mod-grid .trust-card{padding:26px 22px}
 .mod-num{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.06em;margin-bottom:14px;font-variant-numeric:tabular-nums}
 .mod-grid .trust-card h3{font-size:18px;line-height:1.3}
-.clinic-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.onboard-copy .clinic-ctas .btn{margin-top:0}
-.clinic-note{margin-top:22px;font-size:14.5px;color:var(--muted);max-width:440px}
+.session-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.onboard-copy .session-ctas .btn{margin-top:0}
+.session-note{margin-top:22px;font-size:14.5px;color:var(--muted);max-width:440px}
 .foot-line-note{display:block;margin-top:2px;font-size:12.5px;color:#7F8EA3}
 
 /* Strip */
@@ -384,7 +385,8 @@ input[type=range]{width:100%;accent-color:var(--accent);margin:0;height:20px}
   .foot-grid{grid-template-columns:1fr 1fr;gap:32px 24px}
   .foot-brand{grid-column:1/-1;grid-row:auto}
   .footer{padding-bottom:96px}
-  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:90;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(16,24,40,.06)}
+  .mbar{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:90;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(16,24,40,.06)}
+  .mbar .btn{min-width:0;width:100%;white-space:normal;line-height:1.25;padding-left:12px;padding-right:12px}
 }
 @media (max-width:560px){
   .container{padding:0 20px}
