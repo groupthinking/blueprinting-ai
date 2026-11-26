@@ -135,7 +135,10 @@ h3{font-size:20px;line-height:1.3;letter-spacing:-.01em}
 .mod-grid .trust-card{padding:26px 22px}
 .mod-num{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.06em;margin-bottom:14px;font-variant-numeric:tabular-nums}
 .mod-grid .trust-card h3{font-size:18px;line-height:1.3}
+.clinic-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.onboard-copy .clinic-ctas .btn{margin-top:0}
 .clinic-note{margin-top:22px;font-size:14.5px;color:var(--muted);max-width:440px}
+.foot-line-note{display:block;margin-top:2px;font-size:12.5px;color:#7F8EA3}
 
 /* Strip */
 .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
@@ -381,7 +384,7 @@ input[type=range]{width:100%;accent-color:var(--accent);margin:0;height:20px}
   .foot-grid{grid-template-columns:1fr 1fr;gap:32px 24px}
   .foot-brand{grid-column:1/-1;grid-row:auto}
   .footer{padding-bottom:96px}
-  .mbar{display:grid;grid-template-columns:2fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:90;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(16,24,40,.06)}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:90;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(16,24,40,.06)}
 }
 @media (max-width:560px){
   .container{padding:0 20px}
