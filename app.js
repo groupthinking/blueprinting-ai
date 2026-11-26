@@ -56,15 +56,17 @@
       '_captcha':'false',
       '_honey':form['_honey'].value
     };
-    btn.disabled=true;btn.classList.add('is-loading');btn.textContent='Sending\u2026';
-    var ctl=window.AbortController?new AbortController():null,timer=ctl?setTimeout(function(){ctl.abort();},20000):null;
+    btn.disabled=true;btn.classList.add('is-loading');btn.textContent='Sending\u2026 this can take a minute';
+    ok.hidden=true;bad.hidden=true;
+    var ctl=window.AbortController?new AbortController():null,timer=ctl?setTimeout(function(){ctl.abort();},70000):null;
     fetch(form.action,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data),signal:ctl?ctl.signal:undefined})
-      .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+      .then(function(r){return r.text().then(function(txt){var j=null;try{j=JSON.parse(txt);}catch(e){}return {ok:r.ok,j:j};});})
       .then(function(res){
         var good=res.ok&&res.j&&(res.j.success===true||res.j.success==='true');
-        form.hidden=true;(good?ok:bad).hidden=false;(good?ok:bad).focus();
+        if(good){form.hidden=true;ok.hidden=false;ok.focus();}
+        else{bad.hidden=false;bad.focus();}
       })
-      .catch(function(){form.hidden=true;bad.hidden=false;bad.focus();})
+      .catch(function(){bad.hidden=false;bad.focus();})
       .then(function(){if(timer)clearTimeout(timer);btn.disabled=false;btn.classList.remove('is-loading');btn.textContent='Request my free pilot';});
   });
 })();
