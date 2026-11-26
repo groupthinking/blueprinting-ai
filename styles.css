@@ -12,8 +12,6 @@
   --accent:#1F5BD8;
   --accent-dark:#1849B0;
   --accent-soft:#EBF1FD;
-  --green:#14794A;
-  --green-soft:#E5F4EC;
   --radius:8px;
   --shadow-sm:0 1px 2px rgba(16,24,40,.06);
   --shadow-md:0 4px 12px rgba(16,24,40,.08), 0 1px 3px rgba(16,24,40,.06);
@@ -114,7 +112,7 @@ h3{font-size:20px;line-height:1.3;letter-spacing:-.01em}
 .r-time{color:var(--muted)}
 .r-who{font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
 .pill{display:inline-block;font-size:11px;font-weight:600;padding:3px 8px;border-radius:4px;white-space:nowrap}
-.pill-green{background:var(--green-soft);color:var(--green)}
+.pill-muted{background:var(--bg-alt);color:var(--muted);border:1px solid var(--line)}
 .pill-blue{background:var(--accent-soft);color:var(--accent-dark)}
 .ui-sms{left:20px;bottom:24px;width:286px;overflow:hidden}
 .sms-head{padding:12px 16px;border-bottom:1px solid var(--line);background:#FAFBFC}
@@ -125,7 +123,19 @@ h3{font-size:20px;line-height:1.3;letter-spacing:-.01em}
 .bubble{max-width:86%;padding:9px 12px;border-radius:14px;font-size:13px;line-height:1.45}
 .bubble.out{align-self:flex-end;background:var(--accent);color:#fff;border-bottom-right-radius:4px}
 .bubble.in{align-self:flex-start;background:#EEF1F5;color:var(--ink);border-bottom-left-radius:4px}
-.sms-meta{font-size:11.5px;color:var(--green);font-weight:600;margin-top:2px}
+.sms-meta{font-size:11.5px;color:var(--accent-dark);font-weight:600;margin-top:2px}
+
+/* Studio, clinic and example cards */
+.ui-plan{width:300px}
+.ui-plan .ui-rows li{grid-template-columns:48px 1fr auto}
+.ui-plan .r-who{white-space:normal;line-height:1.35}
+.plan-goal{font-size:12.5px;color:var(--ink);font-weight:600;margin:-2px 0 12px;line-height:1.4}
+.plan-goal span{display:block;font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px}
+.mod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.mod-grid .trust-card{padding:26px 22px}
+.mod-num{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.06em;margin-bottom:14px;font-variant-numeric:tabular-nums}
+.mod-grid .trust-card h3{font-size:18px;line-height:1.3}
+.clinic-note{margin-top:22px;font-size:14.5px;color:var(--muted);max-width:440px}
 
 /* Strip */
 .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
@@ -361,6 +371,8 @@ input[type=range]{width:100%;accent-color:var(--accent);margin:0;height:20px}
   .ind-grid{grid-template-columns:1fr;gap:20px}
   .onboard{grid-template-columns:1fr;gap:40px}
   .trust-grid{grid-template-columns:1fr;gap:16px}
+  .mod-grid{grid-template-columns:1fr 1fr;gap:16px}
+  .ui-plan{width:100%}
   .pricing{grid-template-columns:1fr}
   .faq-wrap{grid-template-columns:1fr;gap:28px}
   .pilot{grid-template-columns:1fr;gap:32px}
@@ -396,6 +408,7 @@ input[type=range]{width:100%;accent-color:var(--accent);margin:0;height:20px}
   .ind-card img{aspect-ratio:16/9}
   .ind-body{padding:18px 20px 22px}
   .trust-card{padding:22px 20px}
+  .mod-grid{grid-template-columns:1fr}
   .pilot-card{padding:24px 20px}
 }
 @media (prefers-reduced-motion:reduce){
